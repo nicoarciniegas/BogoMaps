@@ -11,11 +11,10 @@
         <VerticalStackLayout Padding="16,40,16,24" Spacing="20">
 
             <VerticalStackLayout Spacing="8" HorizontalOptions="Center">
-                <Border BackgroundColor="{StaticResource BrandPrimary}" StrokeThickness="0"
-                        WidthRequest="80" HeightRequest="80" HorizontalOptions="Center">
+                <Border StrokeThickness="0" Padding="0"
+                        WidthRequest="96" HeightRequest="96" HorizontalOptions="Center">
                     <Border.StrokeShape><RoundRectangle CornerRadius="24" /></Border.StrokeShape>
-                    <Label Text="B" FontSize="40" TextColor="White" FontFamily="{StaticResource FontExtraBold}"
-                           HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Image Source="chatgpt_image_14_sept_2026_19_10_24.png" Aspect="AspectFill" />
                 </Border>
                 <Border BackgroundColor="{StaticResource SurfaceHigh}" StrokeThickness="0"
                         Padding="10,2" HorizontalOptions="Center">
