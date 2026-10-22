@@ -1,4 +1,4 @@
-﻿namespace BogoMaps.Pages;
+namespace BogoMaps.Pages;
 
 public partial class PerfilPage : ContentPage
 {
@@ -6,6 +6,8 @@ public partial class PerfilPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private async void OnCerrarSesionClicked(object? sender, EventArgs e) => await Shell.Current.GoToAsync("//login");
 
     private static Color Res(string key) => (Color)Application.Current!.Resources[key];
 

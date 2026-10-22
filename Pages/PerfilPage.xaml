@@ -98,7 +98,7 @@
                         <Label Text="Notificaciones, privacidad y geolocalización" Style="{StaticResource BogoBodySm}" />
                     </VerticalStackLayout>
                 </Border>
-                <Button Text="Cerrar sesión" Style="{StaticResource BogoDangerButton}" />
+                <Button Text="Cerrar sesión" Style="{StaticResource BogoDangerButton}" Clicked="OnCerrarSesionClicked" />
             </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
