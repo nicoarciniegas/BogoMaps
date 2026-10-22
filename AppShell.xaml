@@ -3,12 +3,23 @@
     x:Class="BogoMaps.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:BogoMaps"
-    Title="BogoMaps">
+    xmlns:pages="clr-namespace:BogoMaps.Pages"
+    Title="BogoMaps"
+    BackgroundColor="{StaticResource Surface}"
+    TabBarBackgroundColor="{StaticResource Surface}"
+    TabBarForegroundColor="{StaticResource BrandPrimary}"
+    TabBarTitleColor="{StaticResource BrandPrimary}"
+    TabBarUnselectedColor="{StaticResource Outline}">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent Title="Explorar" Icon="tab_explorar.png"
+                      ContentTemplate="{DataTemplate pages:ExplorarPage}" Route="explorar" />
+        <ShellContent Title="Reportar" Icon="tab_reportar.png"
+                      ContentTemplate="{DataTemplate pages:ReportarPage}" Route="reportar" />
+        <ShellContent Title="Guardados" Icon="tab_guardados.png"
+                      ContentTemplate="{DataTemplate pages:DetallePuntoPage}" Route="guardados" />
+        <ShellContent Title="Perfil" Icon="tab_perfil.png"
+                      ContentTemplate="{DataTemplate pages:PerfilPage}" Route="perfil" />
+    </TabBar>
 
 </Shell>

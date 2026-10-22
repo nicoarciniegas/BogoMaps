@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Paleta tomada del sistema de diseño de Stitch (Civic Mobility & Urban Safety) -->
+    <Color x:Key="Surface">#FAF8FF</Color>
+    <Color x:Key="SurfaceLowest">#FFFFFF</Color>
+    <Color x:Key="SurfaceLow">#F2F3FF</Color>
+    <Color x:Key="SurfaceContainer">#EAEDFF</Color>
+    <Color x:Key="SurfaceHigh">#E2E7FF</Color>
+    <Color x:Key="SurfaceHighest">#DAE2FD</Color>
+    <Color x:Key="OnSurface">#131B2E</Color>
+    <Color x:Key="OnSurfaceVariant">#434655</Color>
+    <Color x:Key="Outline">#737686</Color>
+    <Color x:Key="OutlineVariant">#C3C6D7</Color>
+
+    <Color x:Key="BrandPrimary">#2563EB</Color>
+    <Color x:Key="BrandPrimaryDark">#004AC6</Color>
+    <Color x:Key="PrimaryFixed">#DBE1FF</Color>
+    <Color x:Key="BrandSecondary">#006C49</Color>
+    <Color x:Key="SecondaryContainer">#6CF8BB</Color>
+    <Color x:Key="OnSecondaryContainer">#00714D</Color>
+    <Color x:Key="SecondaryFixed">#6FFBBE</Color>
+    <Color x:Key="TertiaryContainer">#996100</Color>
+    <Color x:Key="TertiaryFixed">#FFDDB8</Color>
+    <Color x:Key="OnTertiaryFixed">#2A1700</Color>
+    <Color x:Key="BrandError">#BA1A1A</Color>
+    <Color x:Key="ErrorContainer">#FFDAD6</Color>
+    <Color x:Key="OnErrorContainer">#93000A</Color>
+
+    <!-- Fuentes. Cuando agregues PlusJakartaSans / Inter cambia estos alias (ver MauiProgram.cs) -->
+    <x:String x:Key="FontRegular">OpenSansRegular</x:String>
+    <x:String x:Key="FontBold">OpenSansSemibold</x:String>
+
+    <!-- Tipografía -->
+    <Style x:Key="BogoH1" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+    <Style x:Key="BogoH2" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+    <Style x:Key="BogoBody" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+    <Style x:Key="BogoBodySm" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource OnSurfaceVariant}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+    <Style x:Key="BogoLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="FontSize" Value="12" />
+    </Style>
+
+    <!-- Tarjetas y chips -->
+    <Style x:Key="BogoCard" TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource SurfaceLowest}" />
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="Padding" Value="16" />
+        <Setter Property="StrokeShape">
+            <Setter.Value>
+                <RoundRectangle CornerRadius="16" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="BogoChip" TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource SurfaceLowest}" />
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="Padding" Value="14,8" />
+        <Setter Property="StrokeShape">
+            <Setter.Value>
+                <RoundRectangle CornerRadius="999" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Botones -->
+    <Style x:Key="BogoPrimaryButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource BrandPrimary}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="HeightRequest" Value="48" />
+    </Style>
+    <Style x:Key="BogoSecondaryButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource SurfaceContainer}" />
+        <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="HeightRequest" Value="44" />
+    </Style>
+    <Style x:Key="BogoDangerButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource ErrorContainer}" />
+        <Setter Property="TextColor" Value="{StaticResource OnErrorContainer}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="HeightRequest" Value="48" />
+    </Style>
+</ResourceDictionary>
