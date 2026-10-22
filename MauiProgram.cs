@@ -11,8 +11,13 @@ namespace BogoMaps
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("PlusJakartaSans-Regular.ttf", "JakartaRegular");
+                    fonts.AddFont("PlusJakartaSans-Medium.ttf", "JakartaMedium");
+                    fonts.AddFont("PlusJakartaSans-SemiBold.ttf", "JakartaSemiBold");
+                    fonts.AddFont("PlusJakartaSans-Bold.ttf", "JakartaBold");
+                    fonts.AddFont("PlusJakartaSans-ExtraBold.ttf", "JakartaExtraBold");
+                    fonts.AddFont("Inter_24pt-Medium.ttf", "InterMedium");
+                    fonts.AddFont("Inter_24pt-SemiBold.ttf", "InterSemiBold");
                 });
 
 #if DEBUG

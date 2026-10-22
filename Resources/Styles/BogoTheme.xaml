@@ -31,8 +31,10 @@
     <Color x:Key="OnErrorContainer">#93000A</Color>
 
     <!-- Fuentes. Cuando agregues PlusJakartaSans / Inter cambia estos alias (ver MauiProgram.cs) -->
-    <x:String x:Key="FontRegular">OpenSansRegular</x:String>
-    <x:String x:Key="FontBold">OpenSansSemibold</x:String>
+    <x:String x:Key="FontRegular">JakartaRegular</x:String>
+    <x:String x:Key="FontBold">JakartaBold</x:String>
+    <x:String x:Key="FontExtraBold">JakartaExtraBold</x:String>
+    <x:String x:Key="FontLabel">InterSemiBold</x:String>
 
     <!-- Tipografía -->
     <Style x:Key="BogoH1" TargetType="Label">
@@ -56,8 +58,8 @@
         <Setter Property="FontSize" Value="13" />
     </Style>
     <Style x:Key="BogoLabel" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
-        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+    <Setter Property="TextColor" Value="{StaticResource OnSurface}" />
+    <Setter Property="FontFamily" Value="{StaticResource FontLabel}" />
         <Setter Property="FontSize" Value="12" />
     </Style>
 
